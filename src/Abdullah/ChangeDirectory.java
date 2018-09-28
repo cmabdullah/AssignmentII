@@ -1,8 +1,9 @@
 package Abdullah;
 
 public class ChangeDirectory extends Storage {
+	String head;
 	ChangeDirectory() {
-
+		super();
 	}
 
 	@Override
@@ -20,7 +21,7 @@ public class ChangeDirectory extends Storage {
 
 		head = head.substring(0, index);
 		//System.out.println(head);
-
+		new Storage(head);
 		return head;
 	}
 
